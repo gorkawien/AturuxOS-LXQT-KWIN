@@ -1,0 +1,1 @@
+git clone https://aur.archlinux.org/yay.git && cd yay && makepkg -si --noconfirm && cd .. && sudo rm -rf yay && yay -S hblock --noconfirm && yay -S octopi-dev --noconfirm && yay -S octopi-notifier-qt5 --noconfirm && yay - S breeze-hacked-cursor-theme --noconfirm
