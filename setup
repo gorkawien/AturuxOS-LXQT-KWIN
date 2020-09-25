@@ -797,7 +797,7 @@ and applications that integrate well with the Plasma desktop." 8 60
       "LXDE") DESKTOP_PACKAGES+=('lxde')
               xinit_config="exec startlxde"
               ;;
-      "LXQT") DESKTOP_PACKAGES+=( 'lximage-qt' 'papirus-icon-theme' 'kvantum-qt5' 'kwin' 'pulseaudio' 'gvfs' 'lxqt-admin' 'lxqt-config' 'qterminal' 'lxqt-about' 'lxqt-globalkeys' 'lxqt-notificationd' 'lxqt-openssh-askpass' 'lxqt-panel' 'lxqt-policykit' 'lxqt-powermanagement' 'lxqt-qtplugin' 'lxqt-runner' 'lxqt-session' 'lxqt-sudo' 'lxqt-themes' 'pcmanfm-qt' 'breeze-icons'  'lxqt-archiver' 'featherpad' 'falkon' 'git' 'wget' 'neofetch' 'nano' 'reflector' 'p7zip' 'sharutils' 'lzop' 'lrzip' 'xorg-xinit' 'pacman-contrib'  'exfat-utils' 'ntfs-3g')
+      "LXQT") DESKTOP_PACKAGES+=( 'lximage-qt' 'xscreensaver' 'papirus-icon-theme' 'kvantum-qt5' 'kwin' 'pulseaudio' 'gvfs' 'lxqt-admin' 'lxqt-config' 'qterminal' 'lxqt-about' 'lxqt-globalkeys' 'lxqt-notificationd' 'lxqt-openssh-askpass' 'lxqt-panel' 'lxqt-policykit' 'lxqt-powermanagement' 'lxqt-qtplugin' 'lxqt-runner' 'lxqt-session' 'lxqt-sudo' 'lxqt-themes' 'pcmanfm-qt' 'breeze-icons'  'lxqt-archiver' 'featherpad' 'falkon' 'git' 'wget' 'neofetch' 'nano' 'reflector' 'p7zip' 'sharutils' 'lzop' 'lrzip' 'xorg-xinit' 'pacman-contrib'  'exfat-utils' 'ntfs-3g')
               xinit_config="exec startlxqt"
               ;;
       "MATE") DESKTOP_PACKAGES+=('mate' 'gtk-engines' 'gtk-engine-murrine')
