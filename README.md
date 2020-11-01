@@ -1,6 +1,6 @@
 # AturuxOS-LXQT
 
-AturuxOS-LXQT is a personal modification (slight modificitacion of the LXQT desktop) of the original arch-setup:
+AturuxOS-LXQT is a personal modification (slight variation of the LXQT desktop) of the original arch-setup:
 https://github.com/jorgeluiscarrillo/arch-setup
 
 arch-setup is a console menu based (TUI) install script for Arch Linux.
