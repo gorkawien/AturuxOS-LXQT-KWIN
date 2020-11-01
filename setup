@@ -763,7 +763,7 @@ use.\n\nGraphical environment:" 12 75 3 \
   if [ "$DESKTOP" != "None" ]; then
     DESKTOP_PACKAGES+=("${DESKTOP_DEFAULTS[@]}")
     case "$GUI" in
-      "Budgie") DESKTOP_PACKAGES+=('budgie-desktop' 'gnome-control-center')
+      "Budgie") DESKTOP_PACKAGES+=('budgie-desktop' 'gnome-control-center' 'mutter')
                 dialog --title "Install Extras" --yesno "Would you like to \
 install the 'gnome' group?\n\nIt contains additional utilities and \
 applications that integrate well with the Budgie desktop." 8 60
@@ -797,7 +797,7 @@ and applications that integrate well with the Plasma desktop." 8 60
       "LXDE") DESKTOP_PACKAGES+=('lxde')
               xinit_config="exec startlxde"
               ;;
-      "LXQT") DESKTOP_PACKAGES+=( 'lximage-qt' 'xscreensaver' 'papirus-icon-theme' 'kvantum-qt5' 'kwin' 'pulseaudio' 'gvfs' 'lxqt-admin' 'lxqt-config' 'qterminal' 'lxqt-about' 'lxqt-globalkeys' 'lxqt-notificationd' 'lxqt-openssh-askpass' 'lxqt-panel' 'lxqt-policykit' 'lxqt-powermanagement' 'lxqt-qtplugin' 'lxqt-runner' 'lxqt-session' 'lxqt-sudo' 'lxqt-themes' 'pcmanfm-qt' 'breeze-icons'  'lxqt-archiver' 'featherpad' 'falkon' 'git' 'wget' 'neofetch' 'nano' 'reflector' 'p7zip' 'sharutils' 'lzop' 'lrzip' 'xorg-xinit' 'pacman-contrib'  'exfat-utils' 'ntfs-3g')
+      "LXQT") DESKTOP_PACKAGES+=(  'plocate' 'lm_sensors' 'gvfs-mtp' 'sysstat' 'gpick' 'ntp' 'exfat-utils' 'ntfs-3g' 'lximage-qt' 'xscreensaver' 'papirus-icon-theme' 'kvantum-qt5' 'kwin' 'pulseaudio' 'gvfs' 'lxqt-admin' 'lxqt-config' 'qterminal' 'lxqt-about' 'lxqt-globalkeys' 'lxqt-notificationd' 'lxqt-openssh-askpass' 'lxqt-panel' 'lxqt-policykit' 'lxqt-powermanagement' 'lxqt-qtplugin' 'lxqt-runner' 'lxqt-session' 'lxqt-sudo' 'lxqt-themes' 'pcmanfm-qt' 'breeze-icons'  'lxqt-archiver' 'featherpad' 'firefox' 'git' 'wget' 'neofetch' 'nano' 'reflector' 'p7zip' 'sharutils' 'lzop' 'lrzip' 'xorg-xinit' 'pacman-contrib')
               xinit_config="exec startlxqt"
               ;;
       "MATE") DESKTOP_PACKAGES+=('mate' 'gtk-engines' 'gtk-engine-murrine')
